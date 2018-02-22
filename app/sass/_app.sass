@@ -66,7 +66,9 @@ a
 		+pf
 		top: 0
 		left: 0
-		right: 0
+		left: -10vw
+		// right: 0
+		width: 10vw
 		height: 100%
 		max-height: 100vh
 		overflow-y: auto
@@ -74,15 +76,17 @@ a
 		padding: $hero-top $nav-padding
 		background: $main
 		overflow: hidden
-		transition: opacity $t, visibility $t
+		transition: opacity $t, visibility $t, left $t
 		opacity: 0
 		visibility: hidden
+		box-shadow: -4px 0px 23px 0px rgba(0,0,0,0.75)
 		&.is-active
 			opacity: 1
 			visibility: visible
+			left: 0
 		a
 			display: block
-			font-size: 5vmin
+			font-size: 3vmin
 			color: $w
 			text-align: center
 			padding: 10px 0
@@ -90,9 +94,16 @@ a
 			&:hover,
 			&.is-active
 				color: $b
+		+r(1000)
+			left: 0
+			right: 0
+			width: 100vw
+			padding: 70px 0
+			box-shadow: none
 	&__close
 		+pf
-		right: $nav-padding
+		// right: $nav-padding
+		left: $hero-top
 		top: $hero-top
 		cursor: pointer
 		width: 40px
@@ -110,6 +121,9 @@ a
 				transform: rotate(-45deg)
 			&:nth-of-type(2)
 				transform: rotate(45deg)
+		+r(1000)
+			left: auto
+			right: 15px
 	&__burger
 		width: 40px
 		height: 40px
@@ -119,6 +133,10 @@ a
 		top: 0
 		margin-left: 40px
 		cursor: pointer
+		transition: opacity $t, visibility $t
+		&.is-active
+			opacity: 0
+			visibility: hidden
 		span
 			display: block
 			width: 25px

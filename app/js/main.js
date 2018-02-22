@@ -11,7 +11,8 @@ svg4everybody({
 });
 
 $('.hero__burger, .hero__close').click(function() {
-  $(this).toggleClass('is-active');
+  $('.hero__close').toggleClass('is-active');
+  $('.hero__burger').toggleClass('is-active');
   $('.hero__nav').toggleClass('is-active');
 });
 
