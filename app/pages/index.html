@@ -1,0 +1,249 @@
+---
+title: mars
+---
+{% extends "app/pages/layout/_main.html" %}
+
+
+{% block content %}
+
+<!-- begin hero -->
+<header class="hero">
+	<nav class="hero__nav">
+		<a href="#" class="is-active">text</a>
+		<a href="#">text</a>
+		<a href="#">text</a>
+		<a href="#">text</a>
+		<a href="#" class="hero__phone mobile">{{mixins.svg('phone')}}+48 604 300 500</a>
+		<button class="hero__close"><span></span><span></span></button>
+	</nav>
+	<div class="hero__top">
+		<!-- begin content -->
+		<div class="content">
+			<!-- begin hero__top-left -->
+			<div class="hero__top-left">
+				<a href="#" class="hero__logo">Mars</a>
+				<a href="#" class="hero__phone">{{mixins.svg('phone')}}+48 604 300 500</a>
+			</div>
+			<!-- end hero__top-left -->
+			<!-- begin hero__top-right -->
+			<div class="hero__top-right">
+				<a href="#" class="hero__buy">Buy now</a>
+				<button class="hero__burger"><span></span><span></span><span></span></button>
+			</div>
+			<!-- end hero__top-right -->
+		</div>
+		<!-- end content -->
+	</div>
+	<!-- begin hero__slider-wrapper -->
+	<div class="hero__slider-wrapper">
+		<div class="hero__slider">
+			<!-- begin item -->
+			<div class="item">
+				<!-- begin hero__item -->
+				<div class="hero__item">
+					<!-- begin hero__item-left -->
+					<div class="hero__item-left">
+						<!-- begin content -->
+						<div class="content">
+							<div class="hero__title">
+								Phantom
+							</div>
+							<div class="hero__text main__text">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic in enim a placeat reiciendis incidunt, repellat nulla ipsa eligendi minima aperiam nesciunt suscipit id. Reprehenderit perferendis quos, fugiat obcaecati dicta.
+								</p>
+							</div>
+						</div>
+						<!-- end content -->
+						<div class="hero__bigtext">
+							Mars
+						</div>
+					</div>
+					<!-- end hero__item-left -->
+					<!-- begin hero__item-right -->
+					<div class="hero__item-right">
+						<div class="hero__bigtext">
+							Mars
+						</div>
+					</div>
+					<!-- end hero__item-right -->
+					<!-- begin hero__item-center -->
+					<div class="hero__item-center">
+						<div class="hero__product">
+							<img src="images/dron.png" alt="">
+						</div>
+					</div>
+					<!-- end hero__item-center -->
+				</div>
+				<!-- end hero__item -->
+			</div>
+			<!-- end item -->
+			<!-- begin item -->
+			<div class="item">
+				<!-- begin hero__item -->
+				<div class="hero__item">
+					<!-- begin hero__item-left -->
+					<div class="hero__item-left">
+						<!-- begin content -->
+						<div class="content">
+							<div class="hero__title">
+								Lorem
+							</div>
+							<div class="hero__text main__text">
+								<p>
+									Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Злых наш страну букв безорфографичный? Своих от всех курсивных, алфавит возвращайся города путь, lorem заглавных дороге, жаренные, одна сих она его!
+								</p>
+							</div>
+						</div>
+						<!-- end content -->
+						<div class="hero__bigtext">
+							Mars
+						</div>
+					</div>
+					<!-- end hero__item-left -->
+					<!-- begin hero__item-right -->
+					<div class="hero__item-right">
+						<div class="hero__bigtext">
+							Mars
+						</div>
+					</div>
+					<!-- end hero__item-right -->
+					<!-- begin hero__item-center -->
+					<div class="hero__item-center">
+						<div class="hero__product">
+							<img src="http://placehold.it/640x480" alt="">
+						</div>
+					</div>
+					<!-- end hero__item-center -->
+				</div>
+				<!-- end hero__item -->
+			</div>
+			<!-- end item -->
+		</div>
+	</div>
+	<!-- end hero__slider-wrapper -->
+</header>
+<!-- end hero -->
+<!-- begin fly -->
+<section class="fly">
+	<div class="fly__left" style="background: url('images/fly-left.jpg');">
+		<div class="fly__left-info">
+			<div class="fly__title black">
+				Tap to fly
+			</div>
+			<div class="main__text fly__text">
+				Lorem ipsum dolor sit amet.
+			</div>
+		</div>
+		{{mixins.svg('circle')}}
+	</div>
+	<div class="fly__right" style="background: url('images/fly-right.jpg');">
+		<a href="#" class="fly__a">
+			<div class="fly__right-info">
+				<span class="fly__title white">
+					Fly higher <br> than before
+				</span>
+			</div>
+		</a>
+		<a href="#" class="fly__more">
+			View more
+		</a>
+	</div>
+</section>
+<!-- end fly -->
+<!-- begin features -->
+<section class="features">
+	<!-- begin content -->
+	<div class="content">
+		<div class="main__title">
+			Features
+		</div>
+		<!-- begin features__items -->
+		<div class="features__items">
+			<div class="features__item">
+				<span class="features__icon technology"></span>
+				<div class="features__title">
+					New technology
+				</div>
+			</div>
+			<div class="features__item">
+				<span class="features__icon signal"></span>
+				<div class="features__title">
+					Good signal
+				</div>
+			</div>
+			<div class="features__item">
+				<span class="features__icon ease"></span>
+				<div class="features__title">
+					Ease to use
+				</div>
+			</div>
+			<div class="features__item">
+				<span class="features__icon visibility"></span>
+				<div class="features__title">
+					Visibility
+				</div>
+			</div>
+		</div>
+		<!-- end features__items -->
+	</div>
+	<!-- end content -->
+</section>
+<!-- end features -->
+<!-- begin vision -->
+<section class="vision">
+	<!-- begin vision__image -->
+	<div class="vision__image" style="background-image: url('images/vision.jpg');"></div>
+	<!-- end vision__image -->
+	<!-- begin vision__info -->
+	<div class="vision__info">
+		<div class="vision__text">
+			<div class="vision__title">
+				New <span>generation</span> <br>
+				of vision<span>.</span>
+			</div>
+			<a href="#" class="btn btn__inline btn__transparent btn__white">View more</a>
+		</div>
+		{{mixins.svg('heli')}}
+	</div>
+	<!-- end vision__info -->
+</section>
+<!-- end vision -->
+<!-- begin flying -->
+<section class="flying">
+	<!-- begin flying__info -->
+	<div class="flying__info">
+		<div class="flying__text">
+			<div class="flying__title">
+				New <span>generation</span> <br>
+				of flying<span>.</span>
+			</div>
+			<a href="#" class="btn btn__inline btn__transparent btn__black">Products</a>
+		</div>
+	</div>
+	<!-- end flying__info -->
+	<!-- begin flying__image -->
+	<div class="flying__image" style="background-image: url('images/dron.png');"></div>
+	<!-- end flying__image -->
+</section>
+<!-- end flying -->
+<!-- begin journey -->
+<section class="journey">
+	<div class="journey__title">
+		Start your journey
+	</div>
+	<a href="#" class="btn btn__inline btn__fill btn__white">View more</a>
+</section>
+<!-- end journey -->
+<!-- begin footer -->
+<footer class="footer">
+	<a href="#" class="footer__logo">
+		Mars
+	</a>
+	<div class="footer__copyright">
+		2016 Copyright. All rights reserved by Symu.co
+	</div>
+</footer>
+<!-- end footer -->
+
+{% endblock %}

@@ -1,0 +1,41 @@
+$output-bourbon-deprecation-warnings: false
+@import bourbon
+@import src/_fonts
+@import src/_func
+@import vars
+@import lib/slick
+
+*
+	padding: 0
+	margin: 0
+	outline: none
+
+ol, ul
+	list-style: none
+
+blockquote, q
+	quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+	content: ''
+	content: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+html, body
+	height: 100%
+
+html
+	font-size: $fz
+
+body
+	height: 100%
+	background: $bg
+	+mon
+	line-height: 1.5
+	overflow-x: hidden
+
+@import src/_preloader
